@@ -1,30 +1,33 @@
 package states;
 
 import flixel.FlxSprite;
-import flixel.util.FlxColor;
 import flixel.FlxG;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import sys.io.File;
+import flixel.group.FlxGroup.FlxTypedGroup;
 
 import objects.PieceImage;
 
 class TitleState extends flixel.FlxState {
+	private var ui_buttons:FlxTypedGroup<PieceImage>;
 	private var gj_logo:PieceImage;
 	private var bg:FlxSprite;
 	private var gjLogoTween:FlxTween;
-	private var lastBeatTime:Float = 0;
-	private var beatInterval:Float = 0.5;
 
-	override public function create() {
+	override public function create():Void {
 		var play_button:PieceImage;
 		var create_button:PieceImage;
+
+		ui_buttons = new FlxTypedGroup<PieceImage>();
 
 		bg = new FlxSprite();
 		bg.makeGraphic(FlxG.width, FlxG.height);
 		bg.loadGraphic(AssetPaths.default_bg__png, false);
-		bg.setColorTransform(0, 0, 2);
+		bg.updateHitbox();
+		bg.screenCenter();
+		bg.color = 0xFFfd719b;
 
 		gj_logo = new PieceImage("assets/images/menu/GJ_LaunchSheet.png", "assets/data/menu/GJ_LaunchSheet.xml", "GJ_logo");
 		gj_logo.scale.set(0.6, 0.6);
@@ -46,9 +49,11 @@ class TitleState extends flixel.FlxState {
 		create_button.y = play_button.y + 40;
 		create_button.x += play_button.width;
 
+		ui_buttons.add(play_button);
+		ui_buttons.add(create_button);
+
 		add(bg);
-		add(play_button);
-		add(create_button);
+		add(ui_buttons);
 		add(gj_logo);
 
 		FlxG.sound.playMusic(AssetPaths.menuLoop__ogg, 0.5, true);
@@ -73,6 +78,10 @@ class TitleState extends flixel.FlxState {
 		});
    }
 
+   private function onMouseOver(_):Void {
+
+   }
+
    private function pulseGJLogoOnBeat():Void {
    	new FlxTimer().start(0.5, (timer:FlxTimer)->{ 
    		onPulseTimer(timer);
@@ -80,7 +89,7 @@ class TitleState extends flixel.FlxState {
    	});
    }
 
-	override public function update(elapsed:Float) {
+	override public function update(elapsed:Float):Void {
 		gj_logo.screenCenter();
 		gj_logo.y -= 230;
 
