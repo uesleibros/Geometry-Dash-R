@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas>
+	<!-- __________________________ Geometry Dash Logo __________________________ -->
+	<SubTexture name="GJ_logo" offsetX="7" offsetY="-7" width="1702" height="194" x="196" y="1" rotated="false" />
+	<SubTexture name="GJ_lite" offsetX="2" offsetY="-3" width="356" height="118" x="1" y="363" rotated="false" />
+	<SubTexture name="GJ_md" offsetX="6" offsetY="-7" width="736" height="140" x="359" y="355" rotated="false" />
+	<SubTexture name="GJ_subzero" offsetX="7" offsetY="-7" width="648" height="156" x="196" y="197" rotated="false" />
+	<SubTexture name="GJ_world" offsetX="7" offsetY="-6" width="533" height="156" x="846" y="197" rotated="false" />
+	<!-- ____________________________ Others Logo ____________________________-->
+	<SubTexture name="cocos2d_logo" offsetX="0" offsetY="0" width="360" height="96" x="1" y="1" rotated="true" />
+	<SubTexture name="fmod_logo" offsetX="0" offsetY="0" width="360" height="95" x="99" y="1" rotated="true" />
+	<SubTexture name="RobTop_logo" offsetX="-1" offsetY="-3" width="582" height="204" x="1381" y="197" rotated="false" />
+</TextureAtlas>

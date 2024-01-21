@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas>
+	<!-- __________________________ Title Buttons __________________________ -->
+	<SubTexture name="PlayButton" offsetX="10" offsetY="-10" width="418" height="418" x="460" y="76" rotated="false" />
+	<SubTexture name="CreatorButton" offsetX="7" offsetY="-7" width="266" height="266" x="802" y="1358" rotated="false" />
+	<SubTexture name="FreeLevelsButton" offsetX="1" offsetY="-7" width="318" height="266" x="475" y="1625" rotated="false" />
+	<SubTexture name="FullVersionButton" offsetX="2" offsetY="-7" width="318" height="266" x="475" y="1625" rotated="false" />
+	<SubTexture name="MoreGamesButton" offsetX="2" offsetY="-7" width="326" height="266" x="475" y="1358" rotated="false" />
+	<!-- __________________________ Menu Buttons __________________________ -->
+	<SubTexture name="CreateButton" offsetX="10" offsetY="-10" width="398" height="398" x="82" y="930" rotated="false" />
+	<SubTexture name="SearchButton" offsetX="10" offsetY="-10" width="398" height="398" x="1279" y="799" rotated="false" />
+	<SubTexture name="VersusButton" offsetX="10" offsetY="-10" width="398" height="398" x="1678" y="400" rotated="false" />
+	<SubTexture name="DailyButton" offsetX="10" offsetY="-10" width="398" height="398" x="481" y="495" rotated="false" />
+	<SubTexture name="WeeklyButton" offsetX="10" offsetY="-10" width="397" height="398" x="1678" y="799" rotated="false" />
+</TextureAtlas>
