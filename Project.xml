@@ -4,7 +4,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Geometry Dash R" file="Geometry Dash R" main="Main" version="0.0.1" company="HaxeFlixel" />
+	<app title="Geometry Dash Reloaded" file="Geometry Dash Reloaded" main="Main" version="0.0.1" company="HaxeFlixel" />
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
@@ -32,6 +32,7 @@
 	<set name="BUILD_DIR" value="export" />
 	<source path="source" />
 	<assets path="assets" />
+	<assets path="mods" />
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
